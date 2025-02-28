@@ -278,3 +278,88 @@ footer {
 .club-content .btn:hover {
     background-color: #d9534f;
 }
+/* Reposive cho Phone */
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .about-box, .club-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about-box img, .club-container img {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero, .activities, .club-intro {
+        padding: 30px;
+    }
+
+    .activity-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .club-content h2, .about-box h2 {
+        font-size: 24px;
+    }
+
+    .mission-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
